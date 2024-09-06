@@ -37,10 +37,11 @@
         position: fixed;
         bottom: 20px;
         left: 20px;
-        background-color: transparent; /* Make background transparent */
-        color: #ffffff; /* Set button text color to white */
+        background-color: #000000; /* Visible black background */
+        color: #ffffff; /* White text color */
         padding: 10px 20px;
-        border: 2px solid white; /* Add border if needed */
+        border: 2px solid white; /* White border for visibility */
+        border-radius: 5px;
         cursor: pointer;
         z-index: 1000;
       }
@@ -88,7 +89,7 @@
     </div>
 
     <!-- Custom Transparent Button -->
-    <button id="Website" onclick="window.location.href='https://www.overlay-ai.com';">DEMO APP</button>
+    <button id="customButton" onclick="window.location.href='https://www.overlay-ai.com';">DEMO APP</button>
 
     <script>
       const video = document.querySelector('#video');
