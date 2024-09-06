@@ -37,18 +37,16 @@
         position: fixed;
         bottom: 20px;
         left: 20px;
-        background-color: #007bff; /* Blue background color */
-        color: white; /* White text color */
+        background-color: transparent; /* Make background transparent */
+        color: white;
         padding: 10px 20px;
         border: none;
-        border-radius: 5px; /* Rounded corners */
         cursor: pointer;
         z-index: 1000;
       }
 
       #customButton:hover {
-        background-color: #0056b3; /* Darker blue on hover */
-        text-decoration: underline; /* Underline on hover */
+        text-decoration: underline; /* Optional hover effect */
       }
 
       /* Hide the VR button */
@@ -88,8 +86,8 @@
       <div id="playPauseText">Play with Sound</div>
     </div>
 
-    <!-- Custom Button -->
-    <button id="WEBSITE" onclick="window.location.href='https://www.overlay-ai.com';">DEMO APP</button>
+    <!-- Custom Transparent Button -->
+    <button id="customButton" onclick="window.location.href='https://www.overlay-ai.com';">DEMO APP</button>
 
     <script>
       const video = document.querySelector('#video');
